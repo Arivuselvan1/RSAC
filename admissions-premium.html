@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - KSAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/premium.css">
+</head>
+
+<body>
+  <nav class="nav-premium">
+    <div class="nav-container">
+      <a href="index-premium.html" class="nav-logo">
+        <span class="logo-accent">KSAC</span>
+        <span class="logo-text">Agricultural Excellence</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="index-premium.html" class="nav-link">Home</a>
+        <a href="about-premium.html" class="nav-link">About</a>
+        <a href="programs-premium.html" class="nav-link">Programs</a>
+        <a href="campus-premium.html" class="nav-link">Campus</a>
+        <a href="admissions-premium.html" class="nav-link active">Admissions</a>
+        <a href="contact-premium.html" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-background">
+      <div class="page-hero-gradient"></div>
+      <img src="https://dsagri.in/images/dsa-g2.jpg" alt="Admissions" class="page-hero-image">
+    </div>
+    <div class="page-hero-content">
+      <span class="page-hero-badge"><i class="fas fa-user-graduate"></i><span>Join Us</span></span>
+      <h1 class="page-hero-title">Admissions <span class="gradient-text">2024-25</span></h1>
+      <p class="page-hero-subtitle">Start your journey towards agricultural excellence</p>
+    </div>
+  </section>
+
+  <section class="section-premium">
+    <div class="container-premium">
+      <div class="split-layout">
+        <div class="split-content">
+          <span class="section-tag">Apply Now</span>
+          <h2 class="section-title">Application <span class="gradient-text">Form</span></h2>
+          <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Application submitted
+            successfully!</div>
+          <form class="form-premium" id="admissionForm">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-input" name="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-input" name="email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone *</label>
+              <input type="tel" class="form-input" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">12th Percentage *</label>
+              <input type="number" class="form-input" name="percentage" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Program *</label>
+              <select class="form-select" name="program" required>
+                <option value="">Select Program</option>
+                <option value="bsc-agri">B.Sc. (Hons.) Agriculture</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-premium btn-large btn-primary magnetic-btn">
+              <span>Submit Application</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        <div class="split-visual">
+          <div class="bento-grid" style="grid-template-columns: 1fr;">
+            <div class="bento-card glass-card">
+              <div class="bento-icon"><i class="fas fa-check"></i></div>
+              <h3>Eligibility</h3>
+              <p>10+2 with Physics, Chemistry, Biology/Agriculture with minimum 50% marks</p>
+            </div>
+            <div class="bento-card glass-card">
+              <div class="bento-icon gradient-icon"><i class="fas fa-calendar"></i></div>
+              <h3>Important Dates</h3>
+              <p>Application Start: June 2024<br>Last Date: July 2024</p>
+            </div>
+            <div class="bento-card glass-card">
+              <div class="bento-icon gradient-icon"><i class="fas fa-rupee-sign"></i></div>
+              <h3>Fee Structure</h3>
+              <p>Contact for detailed fee information and scholarship options</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-premium">
+    <div class="container-premium">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo"><span class="logo-accent">KSAC</span></div>
+          <p>Excellence since 2017.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4><a href="contact-premium.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 KSAC.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/premium.js"></script>
+  <script>
+    document.getElementById('admissionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').classList.add('show');
+      this.reset();
+      setTimeout(() => document.getElementById('formSuccess').classList.remove('show'), 5000);
+    });
+  </script>
+</body>
+
+</html>

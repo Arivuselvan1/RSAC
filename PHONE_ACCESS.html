@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View DSAC Website on Phone</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #2d5016 0%, #1d3a0e 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            color: #2d5016;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #2d5016;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #d4af37;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .qr-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .url {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2d5016;
+            margin: 20px 0;
+            border: 3px solid #d4af37;
+        }
+
+        .instructions {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+        }
+
+        .instructions li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .warning {
+            background: #fff9e6;
+            border: 2px solid #d4af37;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .server-status {
+            background: #2d5016;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .server-status .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #4caf50;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #b89b2f 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📱 View Your Website on Phone</h1>
+        <p class="subtitle">DSAC Dynamic Website - Local Preview</p>
+
+        <div class="server-status">
+            <span class="dot"></span>
+            <strong>Server is Running!</strong>
+        </div>
+
+        <div class="qr-container">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=http://192.168.1.2:8000"
+                alt="QR Code" width="300" height="300">
+        </div>
+
+        <div class="url">
+            http://192.168.1.2:8000
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instructions:</h3>
+            <ol>
+                <li><strong>Connect your phone to the same WiFi</strong> as your Mac</li>
+                <li><strong>Open your phone's camera app</strong></li>
+                <li><strong>Point it at the QR code above</strong></li>
+                <li><strong>Tap the notification</strong> to open the website</li>
+            </ol>
+            <p style="margin-top: 15px;"><strong>Or manually type:</strong> <code>http://192.168.1.2:8000</code> in your
+                phone's browser</p>
+        </div>
+
+        <div class="warning">
+            ⚠️ <strong>Important:</strong> Both devices must be on the <strong>same WiFi network</strong>
+        </div>
+
+        <h3 style="margin-top: 30px;">🚀 Want it Online Forever?</h3>
+        <p>Deploy to GitHub Pages in 30 seconds:</p>
+        <a href="https://github.com/Arivuselvan1/KSAC/settings/pages" class="btn" target="_blank">
+            Deploy Now →
+        </a>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0e0e0;">
+            <h4>🛑 To Stop the Server:</h4>
+            <p>Press <strong>Ctrl + C</strong> in your terminal</p>
+        </div>
+    </div>
+</body>
+
+</html>
