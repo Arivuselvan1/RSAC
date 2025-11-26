@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Learn about KSAC - Excellence in agricultural education since 2017. Our vision, mission, and commitment to sustainable agriculture.">
-    <title>About Us - KSAC</title>
+    <title>About Us - KSAC | A Billion Dollar Experience</title>
 
     <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,25 @@
 
     <!-- Premium CSS -->
     <link rel="stylesheet" href="assets/css/premium.css">
+    <link rel="stylesheet" href="assets/css/dynamic-effects.css">
 </head>
 
-<body>
+<body class="dynamic-page">
+    <!-- Animated Particle Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Floating Orbs -->
+    <div class="orbs-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
     <!-- PREMIUM NAVIGATION -->
-    <nav class="nav-premium">
+    <nav class="nav-premium glass-nav">
         <div class="nav-container">
-            <a href="index-premium.html" class="nav-logo">
-                <span class="logo-accent">KSAC</span>
+            <a href="index-premium.html" class="nav-logo shimmer-on-hover">
+                <span class="logo-accent animated-gradient">KSAC</span>
                 <span class="logo-text">Agricultural Excellence</span>
             </a>
 
@@ -54,17 +64,18 @@
     </nav>
 
     <!-- PAGE HERO -->
-    <section class="page-hero">
-        <div class="page-hero-background">
-            <div class="page-hero-gradient"></div>
-            <img src="https://dsagri.in/images/dsa-g3.jpg" alt="About KSAC" class="page-hero-image">
+    <section class="page-hero parallax-section">
+        <div class="page-hero-background parallax-bg">
+            <div class="page-hero-gradient animated-gradient-overlay"></div>
+            <img src="https://dsagri.in/images/dsa-g3.jpg" alt="About KSAC" class="page-hero-image parallax-image">
         </div>
         <div class="page-hero-content">
-            <span class="page-hero-badge">
-                <i class="fas fa-university"></i>
+            <span class="page-hero-badge glass-badge float-animation">
+                <i class="fas fa-university pulse-icon"></i>
                 <span>About Us</span>
             </span>
-            <h1 class="page-hero-title">Cultivating Excellence Since <span class="gradient-text">2017</span></h1>
+            <h1 class="page-hero-title reveal-text">Cultivating Excellence Since <span
+                    class="gradient-text animated-gradient">2017</span></h1>
             <p class="page-hero-subtitle">Discover the legacy, vision, and values that make KSAC a leader in
                 agricultural education</p>
         </div>
@@ -163,7 +174,7 @@
                             </div>
                             <div class="split-visual">
                                 <div class="visual-card">
-                                    <img src="assets/images/principal.png" alt="Principal">
+                                    <img src="assets/images/principal.jpg" alt="Principal" class="principal-photo">
                                     <div class="floating-stats">
                                         <div class="floating-stat">
                                             <div class="stat-icon">📚</div>
@@ -416,6 +427,7 @@
 
                 <!-- Premium JavaScript -->
                 <script src="assets/js/premium.js"></script>
+                <script src="assets/js/dynamic-effects.js"></script>
 </body>
 
 </html>
